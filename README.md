@@ -7,6 +7,8 @@
 ### 1.1 Shooting
 *A woman fired a shot at a man with her gun, but the man did not die. List the possible
 reasons for the man not dying.*
+
+
 **answer:**
 1.  The woman did not hit the man. 
 2.  The woman hit the man, in a non-lethal part (like his little toe).
@@ -42,13 +44,21 @@ Test can be found in: [TestConverter.java](https://github.com/SebastianBentley/s
 ## 3 Thoughts on TDD
 
 * *What was positive and good about using TDD?*
+
+
 The good thing about using TDD, was that I am positive that I do not have to go back and refactor, once it has gone through TDD. When I create something new, I can quickly identify if something stopped working, and why, since I already have the tests.
 
 * *What was annoying or difficult?*
+
+
 The annoying part of TDD, is that it initially takes a lot of work. However it will potentiually save a lot of work in the future.
 
 * *What surprised you?*
+
+
 I was surprised by the way of thinking, when using TDD. Tests aren't something "the get over with and done", it was more "I need to get this test to pass, how do I do that?".
 
 * *Did TDD help you write some tests you wouldn't otherwise have thought of?*
+
+
 not really, the scope was not that big.
