@@ -39,7 +39,7 @@ alien has teeth exactly like yours, and is as smart as you, but it needs a clear
 
 ### 2.1 Fahrenheit-To-Celcius &  2.2 Roman Numeral Converter
 Code can be found in: [Converter.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/main/java/com/example/testassignment1/Converter.java)
-Test can be found in: [TestConverter.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/test/java/com/example/testassignment1/TestTemperatureConverter.java) 
+Test can be found in: [TestConverter.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/test/java/com/example/testassignment1/TestConverter.java) 
  
 ## 3 Thoughts on BDD
 
