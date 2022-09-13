@@ -8,11 +8,19 @@ import java.util.stream.Collectors;
 public class Converter {
 
     public Double fahrenheitToCelcius(double fahrenheit){
-        return (fahrenheit - 32) * 5 / 9;
+        double result = (fahrenheit - 32) * 5 / 9;
+        if (Double.isNaN(result)) {
+            throw new NumberFormatException("Not a number");
+        }
+        return result;
     }
 
     public Double celciousToFahrenheit(double celcius) {
-        return (celcius * 1.8) + 32;
+        double result = (celcius * 1.8) + 32;
+        if (Double.isNaN(result)) {
+            throw new NumberFormatException("Not a number");
+        }
+        return result;
     }
 
 

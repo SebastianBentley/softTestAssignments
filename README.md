@@ -34,31 +34,36 @@ alien has teeth exactly like yours, and is as smart as you, but it needs a clear
   
 
 ## 2 Two katas
-*The code in this exercise, was done using the TDD method.*
+*The code in this exercise, was done using the BDD method. See [StepsDefinitions.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/main/java/com/example/testassignment1/StepsDefinitions.java) for test automation*
   
 
 ### 2.1 Fahrenheit-To-Celcius &  2.2 Roman Numeral Converter
 Code can be found in: [Converter.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/main/java/com/example/testassignment1/Converter.java)
 Test can be found in: [TestConverter.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/test/java/com/example/testassignment1/TestTemperatureConverter.java) 
  
-## 3 Thoughts on TDD
+## 3 Thoughts on BDD
 
-* *What was positive and good about using TDD?*
+* *What was positive and good about using BDD?*
 
 
-The good thing about using TDD, was that I am positive that I do not have to go back and refactor, once it has gone through TDD. When I create something new, I can quickly identify if something stopped working, and why, since I already have the tests.
+The good thing about using BDD, was that I am positive that I do not have to go back and refactor, once it has gone through the BDD process. When I create something new, I can quickly identify if something stopped working, and why, since I already have the tests.
 
 * *What was annoying or difficult?*
 
 
-The annoying part of TDD, is that it initially takes a lot of work. However it will potentiually save a lot of work in the future.
+The annoying part of BDD, is that it initially takes a lot of work. However it will potentiually save a lot of work in the future, and hopefully prevent miscommunication between coder and customer.
 
 * *What surprised you?*
 
 
-I was surprised by the way of thinking, when using TDD. Tests aren't something "the get over with and done", it was more "I need to get this test to pass, how do I do that?".
+I was surprised by the way of thinking, when using BDD. Tests aren't something "the get over with and done", it was more "I need to get this test to pass, how do I do that?".
 
-* *Did TDD help you write some tests you wouldn't otherwise have thought of?*
+* *Did BDD help you understand the problem domain more*
 
 
-not really, the scope was not that big.
+I think to really understand the domain, an actual customer is needed for the acceptance test, otherwise yes.
+
+* *Did BDD help you write some tests you wouldn't otherwise have thought of?*
+
+
+With the acceptance test, I created some test that I would not have otherwise, since I needed to fulfill the "Given" part. 

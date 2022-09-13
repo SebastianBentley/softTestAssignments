@@ -1,8 +1,8 @@
 package com.example.testassignment1;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class TestTemperatureConverter {
@@ -13,12 +13,18 @@ class TestTemperatureConverter {
     @Test
     public void testFahrenheitToCelcius(){
         //arrange
-        double excpected = 37.77777777777778;
+        double excpected = 37.7777;
         //act
         double actual = converter.fahrenheitToCelcius(100);
         //assert
-        assertEquals(excpected, actual);
+        assertEquals(excpected, actual, 0.001);
     }
+
+    @Test
+    public void testFahrenheightNotANumberAsInput(){
+        assertThrows(NumberFormatException.class, () -> converter.fahrenheitToCelcius(Double.valueOf("hej")));
+    }
+
 
     @Test
     public void testCelciusToFahrenheit(){
@@ -28,10 +34,25 @@ class TestTemperatureConverter {
     }
 
     @Test
-    public void testArabicToRoman() {
+    public void testCelciusNotANumberAsInput(){
+        assertThrows(NumberFormatException.class, () -> converter.celciousToFahrenheit(Double.valueOf("hej")));
+    }
+
+    @Test
+    public void testFourteenArabicToRomanXIV() {
         String expected = "XIV";
         String actual = converter.convertArabicToRoman(14);
         assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testArabicToRomanNumberLessThanZero() {
+        assertThrows(IllegalArgumentException.class, () -> converter.convertArabicToRoman(-1));
+    }
+
+    @Test
+    public void testArabicToRomanNumberHigherThan4000() {
+        assertThrows(IllegalArgumentException.class, () -> converter.convertArabicToRoman(5000));
     }
 
 
