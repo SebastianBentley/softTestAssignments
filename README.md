@@ -34,7 +34,7 @@ alien has teeth exactly like yours, and is as smart as you, but it needs a clear
   
 
 ## 2 Two katas
-*The code in this exercise, was done using the BDD method. See [StepsDefinitions.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/main/java/com/example/testassignment1/StepsDefinitions.java) for test automation*
+*The code in this exercise, was done using the BDD method. See [StepsDefinitions.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/test/java/com/example/testassignment1/StepsDefinitions.java) for test automation*
   
 
 ### 2.1 Fahrenheit-To-Celcius &  2.2 Roman Numeral Converter
