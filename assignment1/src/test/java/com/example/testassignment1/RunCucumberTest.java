@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         features = {"src/test/resources/com.example.testassignment1/convertFahrenheitToCelcius.feature",
                 "src/test/resources/com.example.testassignment1/convertCelciusToFahrenheit.feature",
-                "src/test/resources/com.example.testassignment1/convertArabicToRoman.feature"})
+                "src/test/resources/com.example.testassignment1/convertArabicToRoman.feature",
+                 "src/test/resources/com.example.testassignment1/ratingFeature.feature"})
 public class RunCucumberTest {
 
 

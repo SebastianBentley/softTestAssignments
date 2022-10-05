@@ -1,69 +1,77 @@
-
-# Assignment 1
+# Assignment 2
 **Sebastian Bentley - cph-sb287**
 
 ## 1 Reflections
 
-### 1.1 Shooting
-*A woman fired a shot at a man with her gun, but the man did not die. List the possible
-reasons for the man not dying.*
+### 1.1 Computer Mouse
+*Identify the types of testing you would perform on a computer mouse, to make sure that it is of the highest quality.*
+
+**answer:**
+
+
+By following the guide of [artoftesting.com](https://artoftesting.com/mouse), I have found many test, which could be performed to a computer mouse.
+1. Check the type of the computer mouse (optical or not).
+2. Verify that right and left-clicks work as intended.
+3. Verify that you can double click.
+4. verify that the scroller works as inteded (and if it has one).
+5. Verify the speed of the mouse, and the different dpi settings.
+6. Check the pressure of a mouse click, neither to hard or too soft.
+7. Verify the mouse-drag operation.
+8. If the mouse is wireless, check the connection.
+9. If the mouse is wired, check the wired connection...
+10. Verify that the mouse fits the intended hand (right or left).
+11. Check the strength of a mouse, by performing drop tests, and run above tests again.
+12. Run the test many times, to get an idea of how long it will endure.
+
+
+  
+
+### 1.2 Catastrophic Failure
+*Find a story where a software system defect had a bad outcome. Describe what happened. Can you identify a test that would have prevented it?*
 
 
 **answer:**
-1.  The woman did not hit the man. 
-2.  The woman hit the man, in a non-lethal part (like his little toe).
-3. The man was wearing a bullet proof vest.
-4. The gun wasn't loaded.
-5. Doctors were able to save him.
-6. The gun jammed.
-  
-
-### 1.2 Alien 
-*An alien meets you and it asks you to teach it how to brush its teeth. Assume that the
-alien has teeth exactly like yours, and is as smart as you, but it needs a clear step-bystep instruction.*
-**answer:**
-1. Pick up the toothpaste with your left hand.
-2. Uncap the toothpaste with your right hand. 
-3. Pick up your toothbrush with your free hand.
-4. Apply toothpaste to the soft part on the toothbrush, by squeezing gently on the toothpaste tube, untill the top part of the brushses are covered.
-5. apply some water to the toothbrush.
-6. (Optional) put down the toothpaste.
-7. begin stroking your teeth with the brushes in a circular motion.
-8. spit out the toothpaste in the sink.
-9. put back the toothbrush. 
-  
+The story I found, is from [dailysabah.com](https://www.dailysabah.com/business/automotive/tesla-to-recall-135000-vehicles-over-computer-memory-failure), which is about a bug from Tesla, where they had to recall nearly 135.000 cars.
+This was due to the bug that occured, when the flash memory reached its end of life, and then causing failures in features, such as rearview camera, defrost control settings, and turn signal lighting.
+A test to fix this, would have been to stress test the flash memory, and make it reach end of life on many cars. Tesla could then run automated test on the other features, to see which fails, due to flash memory failure.  
 
 ## 2 Two katas
-*The code in this exercise, was done using the BDD method. See [StepsDefinitions.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/test/java/com/example/testassignment1/StepsDefinitions.java) for test automation*
+*The code in this exercise, was done using the BDD method. See [StepsDefinitions.java](link) for test automation*
   
 
-### 2.1 Fahrenheit-To-Celcius &  2.2 Roman Numeral Converter
-Code can be found in: [Converter.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/main/java/com/example/testassignment1/Converter.java)
-Test can be found in: [TestConverter.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment1/src/test/java/com/example/testassignment1/TestConverter.java) 
+### 2.1 String Utility &  2.2 Bowling game kata
+Code can be found in: [?.java](link)
+Test can be found in: [?.java](link) 
  
-## 3 Thoughts on BDD
-
-* *What was positive and good about using BDD?*
+## 3 Investigation of tools
 
 
-The good thing about using BDD, was that I am positive that I do not have to go back and refactor, once it has gone through the BDD process. When I create something new, I can quickly identify if something stopped working, and why, since I already have the tests.
+### 3.1 JUnit 5
 
-* *What was annoying or difficult?*
+Link to a nice guide: [devqa.io](https://devqa.io/junit-5-annotations/)
 
+* *@Tag* cab ve used to tag a test, so it can be used for filtering test. This way, we can easily distiguish which type of test we are running.
 
-The annoying part of BDD, is that it initially takes a lot of work. However it will potentiually save a lot of work in the future, and hopefully prevent miscommunication between coder and customer.
+* *@Disabled* is used to skip/ignore a test.
 
-* *What surprised you?*
+* *@RepeatedTest* is used to repeat test, a paremeter (value) is given, to determine how many times the test should be repeated.
 
+* *@BeforeEach, @AfterEach* are used, when something needs to run before or after each case. An example, could be initializing a database or value, and clearing after each test.
 
-I was surprised by the way of thinking, when using BDD. Tests aren't something "the get over with and done", it was more "I need to get this test to pass, how do I do that?".
+* *@DisplayName* is simply to declare a display name, that will be shown to test runners and test reports.
 
-* *Did BDD help you understand the problem domain more*
+* *@Nested* is used, to group tests inside multiple nested classes. This way, we can test multiple classes in the same test file.
 
+* *assumeFalse, assumeTrue* is used, to determine if the rest of the test is run or not, given the conditions apply in the assumeTrue/assumeFalse.
 
-I think to really understand the domain, an actual customer is needed for the acceptance test, otherwise yes.
+### Mocking Frameworks
+The to frameworks I have chosen to compare, are [Mockito](https://site.mockito.org/) and [Easymock](https://easymock.org/).
 
-* *Did BDD help you write some tests you wouldn't otherwise have thought of?*
+* What are their similarities?
+They are both mocking frameworks, that use the @Mock annotation to define mocks.
 
+* What are their differences?
+Mockito has special annotation for partial mocks. Easymock need to call EasyMock.replay(mock) each time you want to use a mock, or else an exception is thrown.
 
-With the acceptance test, I created some test that I would not have otherwise, since I needed to fulfill the "Given" part. 
+* Which one would you prefer, if any, and why?
+I would prefer to use Mockito, since it is the most known in the community, and therefore easier to find help online.

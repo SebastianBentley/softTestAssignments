@@ -12,6 +12,10 @@ public class StepsDefinitions {
     private int arabic;
     private String roman;
     private Converter converter;
+    private Integer rating;
+    private double ratingAverange;
+    private User user;
+    private Movie movie;
 
     @Given("^the user want to convert (\\d+) celcius to fahrenheit$")
     public void the_user_want_to_convert_celcius_to_fahrenheit(int arg1) throws Exception {
@@ -60,5 +64,22 @@ public class StepsDefinitions {
         roman = converter.convertArabicToRoman(arabic);
         assertEquals("XIV", roman);
     }
+
+    @Given("^The user want to rate a movie five starts$")
+    public void the_user_want_to_rate_a_movie_five_starts() throws Exception {
+        user = new User();
+        movie = new Movie("Titanic");
+    }
+
+    @When("^The user clicks five starts on a movie$")
+    public void the_user_clicks_five_starts_on_a_movie() throws Exception {
+        user.rateMovie(movie, 5);
+    }
+
+    @Then("^The movies rating for the user is five stars$")
+    public void the_movies_rating_is_set() throws Exception {
+        assertEquals(movie.getRating(), 5);
+    }
+
 
 }
