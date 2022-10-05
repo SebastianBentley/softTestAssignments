@@ -67,11 +67,17 @@ Link to a nice guide: [devqa.io](https://devqa.io/junit-5-annotations/)
 ### Mocking Frameworks
 The to frameworks I have chosen to compare, are [Mockito](https://site.mockito.org/) and [Easymock](https://easymock.org/).
 
-* What are their similarities?
+* *What are their similarities?*
+
+
 They are both mocking frameworks, that use the @Mock annotation to define mocks.
 
-* What are their differences?
+* *What are their differences?*
+
+
 Mockito has special annotation for partial mocks. Easymock need to call EasyMock.replay(mock) each time you want to use a mock, or else an exception is thrown.
 
-* Which one would you prefer, if any, and why?
+* *Which one would you prefer, if any, and why?*
+
+
 I would prefer to use Mockito, since it is the most known in the community, and therefore easier to find help online.
