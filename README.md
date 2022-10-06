@@ -36,7 +36,7 @@ This was due to the bug that occured, when the flash memory reached its end of l
 A test to fix this, would have been to stress test the flash memory, and make it reach end of life on many cars. Tesla could then run automated test on the other features, to see which fails, due to flash memory failure.  
 
 ## 2 Two katas
-*The code in this exercise, was done using the BDD method. See [StepsDefinitions.java](link) for test automation*
+*The code in this exercise, was done using the BDD method. See [StepsDefinitions.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment2/TestAssignment2/src/test/java/com/example/testassignment2/StepsDefinition.java)) for test automation*
   
 
 ### 2.1 String Utility &  2.2 Bowling game kata
@@ -44,9 +44,9 @@ Code for homemade string utils can be found here: [BootlegStringUtils.java](http
 Code for the bowling game can be found here: [Game.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment2/TestAssignment2/src/main/java/com/example/testassignment2/Game.java) 
  
  
- Feature files for automated acceptance test, can be found here (clickMe)[https://github.com/SebastianBentley/softTestAssignments/tree/main/assignment2/TestAssignment2/src/test/resources/com.example.testassignment2]
-Unit test for homemade string utils, can be found here (BootlegStringUtilsTest.java)[https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment2/TestAssignment2/src/test/java/com/example/testassignment2/BootlegStringUtilsTest.java]
-Unit test for bowling game, can be found here (BowlingGameTest.java)[https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment2/TestAssignment2/src/test/java/com/example/testassignment2/BowlingGameTest.java]
+ Feature files for automated acceptance test, can be found here [clickMe](https://github.com/SebastianBentley/softTestAssignments/tree/main/assignment2/TestAssignment2/src/test/resources/com.example.testassignment2)
+Unit test for homemade string utils, can be found here [BootlegStringUtilsTest.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment2/TestAssignment2/src/test/java/com/example/testassignment2/BootlegStringUtilsTest.java)
+Unit test for bowling game, can be found here [BowlingGameTest.java](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment2/TestAssignment2/src/test/java/com/example/testassignment2/BowlingGameTest.java)
 
  
 ## 3 Investigation of tools
