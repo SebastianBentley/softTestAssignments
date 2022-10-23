@@ -14,8 +14,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import servicelayer.booking.BookingServiceException;
-
 import java.sql.Date;
 import java.sql.SQLException;
 import java.sql.Time;

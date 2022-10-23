@@ -24,7 +24,7 @@ class SvcCreateCustomerTest extends ContainerizedDbIntegrationTest {
 
     @BeforeAll
     public void setup() {
-        runMigration(3);
+        runMigration(4);
         storage = new CustomerStorageImpl(getConnectionString(),"root", getDbPassword());
         svc = new CustomerServiceImpl(storage);
     }
