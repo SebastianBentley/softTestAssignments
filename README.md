@@ -45,8 +45,8 @@ All of the code can be found within this repository.
 ![answer](assignment4/images/mock5.PNG)
 
 ## 2. The code
-The snake found here: [snake](https://github.com/SebastianBentley/softTestAssignments/tree/main/assignment4/TestAssignment4/src/main/java/snake/GamePanel.java)
-To play the game, simply run the main in the [snake](https://github.com/SebastianBentley/softTestAssignments/tree/main/assignment4/TestAssignment4/src/main/java/snake/SnakeGame.java) main method.
+The snake code found here: [code](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment4/src/main/java/snake/GamePanel.java)
+To play the game, simply run the main in the [game](https://github.com/SebastianBentley/softTestAssignments/blob/main/assignment4/src/main/java/snake/SnakeGame.java) main method.
 
 Code coverage is done by selecting the option *run with code coverage* when running tests. I did not write that many test, since we have waaaay to much to do with the exam.
 However, here is what the code coverage info looks like:
