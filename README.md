@@ -4,23 +4,33 @@ All of the code can be found within this repository.
 
 ## 1. Mockito Powerups
 - How do you verify that a mock was called? 
+
+
 **answer:** You use the *verify()* method.
 ![answer](assignment4/images/mock1.PNG)
 
 - How do you verify that a mock was NOT called? 
+
+
 **answer:** You use the *never()* method as parameter in the verification, notice some code is commented out, because the *never()* method will fail, if it wasn't.
 ![answer](assignment4/images/mock2.PNG)
 
 - How do you specify how many times a mock should have been called?
+
+
 **answer:** You use the *times()* method as parameter in the verify.
 ![answer](assignment4/images/mock3.PNG)
 
 - How do you verify that a mock was called with specific arguments?
+
+
 **answer:** with the *argThat()* method in the *when* call, could not quite figure the syntax out... oh well..
 ![answer](assignment4/images/mock4.PNG)
 
 
 - How do you use a predicate to verify the properties of the arguments given to a call to the mock?
+
+
 **answer:** with the *argThat()* method in the *verify* call, could not quite figure the syntax out... oh well..
 ![answer](assignment4/images/mock5.PNG)
 
