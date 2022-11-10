@@ -54,12 +54,12 @@ public class MockitoStuffTest {
 
 
     //How do you verify that a mock was called with specific arguments?
-    @Test
-    public void question4() {
-        when(service.add(2,3, argThat((a, b) -> a==2 && b==3))).thenReturn(5);
-        assertEquals(10, c.calculate(2,3 ));
-        verify(service).add(2,3);
-    }
+//    @Test
+//    public void question4() {
+//        when(service.add(2,3, argThat((a, b) -> a==2 && b==3))).thenReturn(5);
+//        assertEquals(10, c.calculate(2,3 ));
+//        verify(service).add(2,3);
+//    }
 
     //How do you use a predicate to verify the properties of the arguments given to a call to the mock?
     @Test
