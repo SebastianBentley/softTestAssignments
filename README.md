@@ -53,5 +53,5 @@ However, here is what the code coverage info looks like:
 ![answer](assignment4/images/coverage1.PNG)
 ![answer](assignment4/images/coverage2.PNG)
 
-You might be wondering where all the unit tests are? well... The way that snake is coded, would take very long to test.. instead, I found another way I should have done it: ![snake tests](https://github.com/AlmasB/TDD-Snake/blob/master/src/test/java/com/almasb/snake/SnakeTest.java). However, I can't test it this way, with the current snake setup. We have way to much to do, with our exam, for me to spend that long on a test assignment, cool tests will come in the exam project instead.
+You might be wondering where all the unit tests are? well... The way that snake is coded, would take very long to test.. instead, I found another way I should have done it: [snake tests](https://github.com/AlmasB/TDD-Snake/blob/master/src/test/java/com/almasb/snake/SnakeTest.java). However, I can't test it this way, with the current snake setup. We have way to much to do, with our exam, for me to spend that long on a test assignment, cool tests will come in the exam project instead.
 
